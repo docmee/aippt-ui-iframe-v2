@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "useDefineForClassFields": true,
+      "lib": ["esnext", "DOM"],
+      "esModuleInterop": false,
+      "strict": true,
+      "isolatedModules": true,
+      "noEmit": true,
+      "allowJs": true,
+      "target": "ESNext",
+      "module": "ESNext",
+      "allowSyntheticDefaultImports": true,
+      "forceConsistentCasingInFileNames": true,
+      "noImplicitReturns": false,
+      "noImplicitThis": true,
+      "noImplicitAny": false,
+      "importHelpers": true,
+      "strictNullChecks": false,
+      "skipLibCheck": true,
+      "moduleResolution": "node10"
+    },
+    "exclude": ["node_modules"]
+  }

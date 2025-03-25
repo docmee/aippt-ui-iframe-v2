@@ -1,0 +1,24 @@
+{
+  "name": "aippt-ui-iframe-v2",
+  "version": "1.0.0",
+  "description": "通过 UI iframe 方式接入文多多AiPPT(https://docmee.cn)",
+  "type": "module",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "文多多",
+    "aippt"
+  ],
+  "author": "veasion",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@docmee/sdk-ui": "^1.1.16"
+  },
+  "devDependencies": {
+    "vite": "^6.2.0"
+  }
+}

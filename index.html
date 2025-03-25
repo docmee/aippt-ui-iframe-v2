@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文多多 AiPPT</title>
+    <style>
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .page_navigate {
+            padding: 5px;
+            height: 45px;
+            width: calc(100% - 50px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .page_navigate>div {
+            padding: 8px 16px;
+            margin-right: 8px;
+            cursor: pointer;
+            user-select: none;
+            border: 2px solid #f0f0f0;
+            border-radius: 6px;
+        }
+
+        .page_navigate .selected {
+            background: #f57bb0;
+        }
+
+        #container {
+            width: calc(100% - 50px);
+            height: calc(100% - 100px);
+            margin: 0 auto;
+            padding: 0;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(120, 120, 120, 0.3);
+            overflow: hidden;
+            background: linear-gradient(-157deg, #f57bb0, #867dea);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 自定义导航按钮 -->
+    <div class="page_navigate">
+        <div id="page_creator" class="selected">生成PPT</div>
+        <div id="page_dashboard">PPT列表</div>
+        <div id="page_customTemplate">自定义模板</div>
+    </div>
+    <!-- 挂载iframe容器 -->
+    <div id="container"></div>
+    <script type="module" src="src/main.ts"></script>
+</body>
+
+</html>

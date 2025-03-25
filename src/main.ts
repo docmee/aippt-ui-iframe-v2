@@ -15,7 +15,7 @@ const limit = 10;
     return;
   }
   // 创建token（请在调用服务端接口实现）
-  const res = await fetch("https:/docmee.cn/api/user/createApiToken", {
+  const res = await fetch("https://docmee.cn/api/user/createApiToken", {
     method: "POST",
     body: JSON.stringify({
       uid: uid,
